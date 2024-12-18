@@ -1,0 +1,127 @@
+solarwinds
+ASYNC_NETWORK_IO
+Note: This is essentially the same wait type as NETWORKIO.
+
+This waittype indicates that the SPID is waiting for the client application to fetch the data before the SPID can send more results to the client application.
+
+
+Resolved By
+Developers and sometimes Network Administrators
+
+
+Solutions
+Common causes and solutions for waits on ASYNC_NETWORK_IO are:
+
+
+Queries with Large Result Sets - the most common cause of this wait (by far) is very large result sets being transmitted back to the client.
+
+This will appear in SolarWinds DPA as a SELECT statement that has a lot of wait time associated with it. Tune the query to read less rows if possible.
+
+From many experiences we have seen this occur when Microsoft Access attempts to join a SQL Server table with a local Access table. Access will retrieve every row from SQL Server and perform the join locally within Access.Redesign the Access query so it can retrieve a subset of the data from SQL Server and then join locally to the Access table.
+
+Other causes include: FTP retrieving data from SQL Server, bulk inserts and unloads, backups to network destinations, etc.
+
+
+Calling Application is not Processing Results Fast Enough - the most common cause of this wait is an application server that is low on resources, e.g. CPU is spiked at 100%. Other causes could be an application that reads data and then does other processing, e.g. read a row, run another process that takes several seconds or minutes.
+
+
+Network Hardware Problems - this is rarely the cause, but review counters such as Batch Requests per second (values over 3000 for a 100MB network card are getting excessive) and Network Interface: Current Bandwidth (values over 0.6 are getting excessive).
+
+=================
+LCK_M_S
+Shared (S) locks are used for operations that read data, such as a SELECT statement. When shared locks are used, concurrent transactions can read (SELECT) a resource, but cannot modify the data. Typically the shared locks on a resource are released as soon as the data has been read. However, if the HOLDLOCK locking hint or transaction isolation level is set to REPEATABLE READ or SERIALIZABLE, shared locks on a resource will be held until the end of the transaction.
+
+
+Resolved By
+Developers and sometimes DBAs
+
+Solutions
+Detailed analysis and recommendations can be found in SQL Server Locking.
+
+==============
+Memory/CPU
+The database is typically using the CPU and/or memory (not necessarily waiting to use the CPU).
+
+
+Resolved By
+DBA and sometimes System Administrators
+
+
+Solutions
+From within SolarWinds DPA, review the amount of logical I/O (logical reads and writes) performed by this SQL statement. Large amounts of logical I/O is typically caused by inefficient SQL statements that read more data than necessary, and that data is already loaded into memory. If the data required is not in the buffer cache, it will read from disk and the SQL statement will experience physical I/O waits. In most cases, you will see a mixture of waits on CPU and physical I/O for inefficient SQL statements while it reads some data from memory and some from disk. Solution #1 below is used the most for solving this issue.
+
+
+1. Memory Scans Queries that have high waits on CPU may be reading more data from memory than necessary.
+
+The following are two high-level cases where this could occur:
+
+Full Table Scans: If the database server has enough memory, it may have an entire table cached.Although the query may be reading this table from memory, it will show excessive CPU time since it must read and process a large number of blocks in memory.Consider adding an index that would require fewer memory reads.
+
+Index Reads: If a query is using a cached index, it may still be performing more index block reads in memory than necessary. Ensure that the index is optimized to minimize block retrievals. For example, it may make sense to have fewer columns in an index if it must still read a table block anyway. On the other hand, it may make sense to put more columns in the index if it will prevent the need to hit any table blocks.It may also help to rebuild fragmented indexes.Finally, ordering the rows in the table might require fewer table blocks to be retrieved since all similar rows would be in the same block. For example, it might make sense to periodically order the rows in an Order table by customer id since they may be frequently retrieved by customer id. Without reordering, the orders for a particular customer are likely to be scattered among many table blocks requiring more memory reads.
+
+
+2. If CPU is high, tune the other waits that show up in the query.
+
+- Frequently, the CPU wait is a symptom of the other waits in the query.
+
+
+3. Try to issue fewer queries.
+
+- In some cases, a single query could be written that would take the place of another query that is executed a large number of times.
+
+- It is also possible to cache data in the application that may require fewer queries against the database.
+
+
+4. Check to see if other database activity, such as large batch jobs, can be scheduled for another time.
+
+- These types of jobs may cause significant memory and/or CPU contention.
+
+
+5. Check for non-database activity that is occurring on the server.
+
+- Abnormal activity may affect the database in various ways such as using significant CPU or forcing the database process to swap or page memory.
+
+
+6.Have the System Administrator make sure that swapping or paging is not occurring.
+
+- If so, it may make sense to allocate less memory to the database.
+
+
+7. If CPU spikes suddenly and caused significant abnormal wait time, the server may be having a problem.
+
+- If so, contact the System Administrator.
+
+
+8. Consider purchasing hardware
+
+- If the CPU utilization on the server is less than 90%, consider purchasing faster CPU's.
+
+- If utilization is above 90%, adding CPU's may help.
+
+- Faster memory may also make a significant difference.
+
+
+============
+WRITELOG
+Occurs while waiting for a log flush to complete. Common operations that cause log flushes are checkpoints and transaction commits.
+
+
+Resolved By
+DBAs, Developers, System Administrators and Storage Administrators
+
+
+Solutions
+See if it is possible to commit less often in the application or delay commits until other read-only activity finishes.
+
+Check if the transaction logs can be put on faster disks or disks with less contention.
+
+Check if Recovery is set to SIMPLE.
+
+Check to see if transaction logs are sized properly.
+
+===========
+TRENDS: => top SQL
+
+Resource: Memory/CPU...
+
+Anhla34nbb

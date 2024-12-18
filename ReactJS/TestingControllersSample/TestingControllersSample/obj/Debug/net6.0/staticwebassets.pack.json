@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "c:\\Data-cKhanh\\.NET\\ReactJS\\TestingControllersSample\\TestingControllersSample\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "c:\\Data-cKhanh\\.NET\\ReactJS\\TestingControllersSample\\TestingControllersSample\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "c:\\Data-cKhanh\\.NET\\ReactJS\\TestingControllersSample\\TestingControllersSample\\wwwroot\\js\\jquery-2.2.0.js",
+      "PackagePath": "staticwebassets\\js\\jquery-2.2.0.js"
+    },
+    {
+      "Id": "c:\\Data-cKhanh\\.NET\\ReactJS\\TestingControllersSample\\TestingControllersSample\\wwwroot\\js\\knockout-3.4.2.js",
+      "PackagePath": "staticwebassets\\js\\knockout-3.4.2.js"
+    },
+    {
+      "Id": "c:\\Data-cKhanh\\.NET\\ReactJS\\TestingControllersSample\\TestingControllersSample\\wwwroot\\js\\knockout.mapping.js",
+      "PackagePath": "staticwebassets\\js\\knockout.mapping.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.TestingControllersSample.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.TestingControllersSample.props",
+      "PackagePath": "build\\TestingControllersSample.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.TestingControllersSample.props",
+      "PackagePath": "buildMultiTargeting\\TestingControllersSample.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.TestingControllersSample.props",
+      "PackagePath": "buildTransitive\\TestingControllersSample.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

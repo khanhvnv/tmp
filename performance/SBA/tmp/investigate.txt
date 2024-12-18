@@ -1,0 +1,95 @@
+request has error
+Click_Save_Timesheet
+{
+"timeDate":"2017-02-27T17:00:00.000Z",
+"userProfileId":"7f7ffa17-c70a-42ef-a209-3bdddc7c5ff5",
+"projectId":"05ef300c-f8cc-492c-97e7-fffac5adbb78",
+"userCostCodeId":"80b91954-de25-454a-8409-3d9846a4b443",
+"projectActivityId":"e8157a81-8e4c-400a-9c14-a2a3e0238e6c",
+"userCostAmtId":"c6c0b5ea-57a5-4822-90a4-4a79d34a8750",
+"projectTaskId":"6b677707-aa0e-4406-a3f4-7db2092acf9e",
+"effortUnits":0.01,
+"timeNotes":"notes",
+"fromDate":"2017-02-26T17:00:00.000Z",
+"toDate":"2017-03-04T17:00:00.000Z"
+}
+=> Error: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.Timesheet_dbo.ProjectTask_ProjectTaskId". The conflict occurred in database "RHINO_DB_1", table "dbo.ProjectTask", column 'Id'.
+The statement has been terminated.
+
+
+Click_Save_Expense
+expenseNetAmt	0.45
+chargeable	true
+units	1
+expenseDate	2017-02-27T17:00:00.000Z
+paymentType	0
+taxRate2Amount	null
+projectTaskId	6b677707-aa0e-4406-a3f4-7db2092acf9e
+taxRate3Amount	null
+receiptAttachment	null
+supplier	null
+taxRate1Amount	null
+perUnitMultiplier	0.45
+chargeableAmount	0.45
+expenseTypeId	bf8ffade-6969-4079-9c1b-1b395c6cc238
+userProfileId	7f7ffa17-c70a-42ef-a209-3bdddc7c5ff5
+expenseNotes	Own Car - Mileage @ 45p
+expenseGrossAmt	null
+locked	false
+projectId	05ef300c-f8cc-492c-97e7-fffac5adbb78
+=> Error: An error occurred while updating the entries. See the inner exception for details.
+
+
+Sau khoảng 30' => monitor hardware: CPU > 80% -> 100%
+6:50-40' => CPU: 100%
+Memory: 65% (2.6G/4G)
+Ethernet: Send 12Mps/ Receive 9.4Mps
+
+always 100%
+
+emoryError: GC overhead limit exceeded
+
+2017/03/15 09:36:47 ERROR - jmeter.JMeter: Uncaught exception:  java.lang.OutOfMemoryError: Java heap space
+
+2017/03/15 09:36:47 ERROR - jmeter.JMeter: Uncaught exception:  java.lang.OutOfMemoryError: GC overhead limit exceeded
+
+2017/03/15 09:36:47 ERROR - jmeter.JMeter: Uncaught exception:  java.lang.OutOfMemoryError: Java heap space
+
+2017/03/15 09:36:47 ERROR - jmeter.JMeter: Uncaught exception:  java.lang.OutOfMemoryError: Java heap space
+
+2017/03/15 09:36:48 ERROR - jmeter.JMeter: Uncaught exception:  java.lang.OutOfMemoryError: GC overhead limit exceeded
+
+2017/03/15 09:36:48 ERROR - jmeter.JMeter: Uncaught exception:  java.lang.OutOfMemoryError: Java heap space
+
+2017/03/15 09:36:48 ERROR - jmeter.JMeter: Uncaught exception:  java.lang.OutOfMemoryError: GC overhead limit exceeded
+
+2017/03/15 09:36:48 ERROR - jmeter.JMeter: Uncaught exception:  java.lang.OutOfMemoryError: Java heap space
+
+2017/03/15 09:36:48 ERROR - jmeter.JMeter: Uncaught exception:  java.lang.OutOfMemoryError: Java heap space
+
+2017/03/15 09:36:48 ERROR - jmeter.JMeter: Uncaught exception:  java.lang.OutOfMemoryError: GC overhead limit exceeded
+
+2017/03/15 09:36:48 ERROR - jmeter.JMeter: Uncaught exception:  java.lang.OutOfMemoryError: Java heap space
+
+2017/03/15 09:36:48 ERROR - jmeter.JMeter: Uncaught exception:  java.lang.OutOfMemoryError: GC overhead limit exceeded
+
+
+15Mar:
+
+Visit Homepage & Login: 403 Sever error: Access Denied page
+
+16Mar:
+Select_Default_Task
+
+MEmbers: Save TS, EX, DEL Proposal, Expenses, CompanyContact
+
+Round 2:
+12:12 play - starting the test: 12:15
+9minute, all 2500 users in -> first error - add invoice for sale
+12 minutes: click save timesheet
+
+Round 3:
+15:38 
+
+Rerun - R1:
+StartedMar 16, 2017, 9:25:48 PM

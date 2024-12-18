@@ -1,0 +1,62 @@
+*************************  Load Testing Infrastructure *************************
+**  https://loadtest.rhinoapps.com/Rhino
+**  https://loadtest.rhinoapps.com/RhinoMetadata
+**  RHINO Load Test - App Server:                   RHE-IRE-APP-LT1 (IP: 34.251.157.31)
+**   Windows Run:                      mstsc /v: 34.251.157.31 /admin
+**   Username:                            Administrator
+**   Password:                              D.h6v?tZ8ni
+**   Private IP Address:              172.31.14.173
+**  RHINO Load Test - Database Server:        RHE-IRE-APP-LT2 (IP:34.250.190.73)
+**   Windows Run:                      mstsc /v: 34.250.190.73 /admin
+**   Username:                            Administrator
+**   Password:                              D.h6v?tZ8ni
+**   Private IP Address:              172.31.15.57
+===================================================================================
+**  Production SQL Server
+**  Windows Run:                      mstsc /v: 52.210.164.223 /admin
+**  Username:                            Administrator
+**  Password:                              Ae3evhH4Ba
+**  Private IP Address:              172.31.1.182
+**  Opened up ports to Web Server to Production Web Server (IP: 172.31.31.155)
+
+
+
+http://10.84.1.76:8123/iwc/performanceDetail.iwc?db_id=2&problem_id=19-5&day=&bcDisplayName=DB&tab=2&ts=&pm=P
+anh em vao link nay coi result qua SQL ne
+
+dpa / harveynash@123
+
+solarwinds tool:
+http://svuit.vn/threads/huong-dan-cai-solarwinds-network-performance-monitor-688/
+http://doc.edu.vn/tai-lieu/de-tai-tim-hieu-phan-mem-phuc-vu-quan-ly-mang-solarwinds-55138/ (vienkeo112/ ty0203)
+
+ping http://loadtest2.rhinoapps.com ra 59.19.51.179 / 52.212.67.237
+ping http://loadtest.rhinoapps.com ra 34.251.157.31
+loadtest2.rhinoapps.com
+http://loadtest2.rhinoapps.com/TRhino/#/login
+http://loadtest2.rhinoapps.com/TRhino
+jmeter.apache.org
+
+
+ip.addr == 34.251.157.31 || ip.addr == 34.250.190.73
+ip.addr == 52.19.51.179 || ip.addr == 52.212.67.237
+ip.addr == 140.211.11.105 || ip.addr == 88.198.26.2
+
+(ip.dst_host==34.251.157.31|| ip.dst_host==34.250.190.73) && http
+(ip.dst_host==52.19.51.179 || ip.dst_host==52.212.67.237) && http
+
+lọc wireshark theo domain name:
+http.host contains "rhino"
+http.host contains "loadtest2"
+hoặc
+http.host == "loadtest2.rhinoapps.com"
+
+2a01:4f8:130:2192::2
+140.211.11.105
+88.198.26.2
+
+http://loadtest2.rhinoapps.com/rhino/#/login
+ tenant1user1@mailinator.com/ 123456
+LBIP1 and LBIP2: 52.19.51.179 & 52.212.67.237
+mà em set DNS Cache Manager xong vẫn thấy nó access mỗi 1 thằng .179 ah anh, ko qua .237 miếng nào
+

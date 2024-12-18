@@ -1,0 +1,50 @@
+question: 
+Click_Invoice_icon_Contact -> Invoices/GetWithPaging -> type = 1 (what is this type?)
+Click Task project -> project task/ get with paging/ -> planned deadline???
+chú ý, id của default task -> kiem tra dung hay ko
+
+Click Save Timesheet, nếu this week has been submit -> https://loadtest.rhinoapps.com/rhinoApi/api/TimeSheets/NOT%20FOUND, cần chặn chỗ này
+Click_Default_Task -> 500 error - Invalid object name 'dbo.UserTeam'.
+
+Visit TS - 7
+https://loadtest.rhinoapps.com/Rhino/commonViews/timesheetMemberView.html?t=1490848530013
+..
+https://loadtest.rhinoapps.com/Rhino/language/en/views/web/timesheetList.html?t=1490848530308
+
+Select week:
+https://loadtest.rhinoapps.com/rhinoApi/api/Timesheets/GetTimesheetsWithPeriod?from=2017-03-19T17:00:00.000Z&isGetAdminOnly=true&t=1490848582753&to=2017-03-26T16:59:59.000Z&userId=55103616-81e8-4611-a977-38073b013850
+
+Click Add
+https://loadtest.rhinoapps.com/Rhino/language/en/views/web/timesheetFormAdd.html?t=1490848643513
+
+Select task - 2 link
+https://loadtest.rhinoapps.com/rhinoApi/api/ProjectTasks?filter=%7B%22ProjectId%22:%22db4d3b9c-d0ee-4593-b231-9c100f19139e%22,%22ProjectTaskType%22:%221%22%7D&t=1490848676640
+https://loadtest.rhinoapps.com/rhinoApi/api/ProjectActivities/GetByProject/db4d3b9c-d0ee-4593-b231-9c100f19139e?t=1490848676640
+
+Save TS - 4 link (20/03)
+POST 
+..
+https://loadtest.rhinoapps.com/rhinoApi/api/ProjectActivities/GetByProject/db4d3b9c-d0ee-4593-b231-9c100f19139e?t=1490848709122
+
+Back - 0
+
+Click Submit - 2 link
+https://loadtest.rhinoapps.com/rhinoApi/api/TimesheetSubmissions
+Request Method:POST
+https://loadtest.rhinoapps.com/rhinoApi/api/UserProfiles/558b18d4-0629-464a-8b49-0c08258584d9?t=1490848803748
+
+Go to TS Approval - 3 links 
+https://loadtest.rhinoapps.com/Rhino/commonViews/timesheetAdminView.html?t=1490848833262
+https://loadtest.rhinoapps.com/rhinoApi/api/Timesheets/GetTimesheetsWithPeriod?from=2017-03-26T17:00:00.000Z&isGetAdminOnly=false&t=1490848833851&to=2017-04-02T16:59:59.000Z&userId=55103616-81e8-4611-a977-38073b013850
+https://loadtest.rhinoapps.com/Rhino/language/en/views/web/timesheetSubmissionList.html?t=1490848833824
+
+Select week - 1 link
+https://loadtest.rhinoapps.com/rhinoApi/api/Timesheets/GetTimesheetsWithPeriod?from=2017-03-19T17:00:00.000Z&isGetAdminOnly=false&t=1490848882976&to=2017-03-26T16:59:59.000Z&userId=55103616-81e8-4611-a977-38073b013850
+
+
+Admin using for approval
+tenant1user19@mailinator.com
+tenant2user20@mailinator.com
+tenant3user10@mailinator.com
+tenant4user15@mailinator.com
+tenant5user3@mailinator.com

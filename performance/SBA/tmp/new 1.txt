@@ -1,0 +1,132 @@
+ Visit Login page
+ Verify Login page
+ <title>Rhino</title>
+ 
+ 
+ Login to account on Rhino
+ Verify Login page displayed
+ "userName":"${username}"
+ 
+ <h3 ng-bind="mainCtrl.label.changePasswordForm.title" class="ng-binding">Register Successfully</h3>
+ <p ng-bind="mainCtrl.label.changePasswordForm.notification" class="ng-binding">Thank you for registering to use Rhino. Please set a password for your account.</p>
+ 
+ https://www.youtube.com/watch?v=hGkrSFKcj10
+ https://www.youtube.com/watch?v=YbQHL8lTnZ4
+ https://www.youtube.com/watch?v=4mfFSrxpl0Y
+ 
+ 97561a1b-6b8f-471b-a877-2541fc7c9ebe
+ a63aed47-12f0-4b14-8e35-b8961c52a446
+  
+ multipart/form-data; boundary=----WebKitFormBoundarybJAAkGeQqjbrhYj7
+ 
+http://stackoverflow.com/questions/12560494/jmeter-basic-authentication
+http://stackoverflow.com/questions/24542747/jmeter-alter-http-headers-during-test
+http://www.jmeter-archive.org/How-to-add-quot-Authorization-quot-header-under-HTTP-Header-Manager-td5719472.html
+http://www.jmeter-archive.org/Variables-in-HTTP-headers-td4579331.html
+https://jmetertutorialblog.wordpress.com/2016/04/18/how-to-extract-values-from-response-header-in-jmeter/
+
+https://jmeter-plugins.org/wiki/Functions/#base64Encodesupfont-color-gray-size-1-since-1-2-0-font-sup
+http://www.markschabacker.com/blog/2013/05/10/jmeter_with_webforms_authentication/
+https://www.blazemeter.com/blog/how-load-test-csrf-protected-web-sites
+http://sqa.stackexchange.com/questions/20014/api-testing-with-jmeter-how-to-get-the-dynamic-token-and-insert-it-into-next-ht
+http://sqa.stackexchange.com/questions/16525/getting-response-code-401-when-using-protocol-https-in-jmeter
+ 
+ 
+ {
+:   "statusCode":200,
+:   "data":
+:   [
+:   :   {
+:   :   :   "id":"12441a8e-f76e-4b70-95ba-13771ce3dedf",
+:   :   :   "name":"SBA 118"
+:   :   }
+:   ],
+:   "success":true,
+:   "message":"Successful",
+:   "paging":null
+}
+ .*"name":"([^"]+)".*
+ 
+ Authorization: (.*) -> auth = null, nhung auth_g0=full text
+ 
+ 
+ .*Authorization (.*) 
+ 
+ Authorization: (bearer )(.+?) OR Authorization: bearer (.+?) OR Authorization: bearer (.+)
+=> auth=
+auth_g=2
+auth_g0=Authorization: bearer U
+auth_g1=bearer 
+auth_g2=U
+ 
+ Authorization: (bearer )(.+*) => not found
+ Authorization: bearer (.+*)=> not found
+ 
+ bearer (.+)
+ template: $1$ $2$
+ ${auth_g0}
+ 
+ Content-Type: multipart/form-data; boundary=---------------------------7e123e1f121368
+ Content-Type: multipart/form-data; boundary=---------------------------7e1df1ae0516
+ 
+ .*"access_token":"([^"]+)".*
+ 
+ 
+ jmeter -n -t "D:\Project\Testing\Jmeter\expmale.jmx" -l "D:\Project\Testing\Jmeter\example.csv" -e -o "D:\Project\Testing\Jmeter\Report"
+ 
+ 
+ 
+ companyContactSalesLifeCycleId=b2af75c7-f67d-45c0-a112-1d082b275de0 - new 1
+ companyContactSalesLifeCycleId":"4753814f-9738-4f1a-bf03-cf845333a3b3 - old
+ 
+ proposalDefaultNotes=Please confirm that you are happy to proceed by email and we will be in contact to schedule the work
+ proposalDefaultTerms=The customer accepts responsibility for selecting materials used on each job and must guarantee access to the premises on the agreed dates
+ 
+ Registered Company No: 111222333    Bank Sort Code 00-11-00     Bank Account No: 1010101010
+ 
+proposalDefaultTerms=The customer accepts responsibility for selecting materials used on each job and must guarantee access to the premises on the agreed dates 
+ 
+ 
+ 
+ 
+ 
+ anh có Pratise cụ thể cho em đây:
+1. Setup IIS
+2. Anh đưa source web
+3. create a Jmeter load test. 
+-3 users access index, loop 20 times
+-2 users access License. loop 10 times
+-4 user access donwload and release note, loop 1 minute
+source web anh gữi qua mail rồi
+cái này dễ, em làm thử trước
+anh nghĩ là em làm 4-6 hours là xong
+nếu em thấy simple quá thi có thể bỏ, anh đưa Pratise khó hơn
+
+http://10.84.1.76/SBAWEB_QC/#/login
+thai108@mailinator.com
+1
+1. home page
+2. Login
+3. Create contact
+============
+4. user/pwd stored in a csv file
+em dùng account 118, ko phải 108 nha
+108 của người khác
+
+account của em chỉ có 1 tenant
+nên khi submit user/pass
+nó sẽ trả về có 1 tenent id
+web nó thấy vậy nó submit lại 1 lần nữa với tenant ID
+và server sẽ trả về authentication
+khi add new 1 contact
+em phải truyền thêm tham số authentication
+thì nó mới vô
+tham số này em add thêm vào phần header của request add
+
+•	The performance testing will be done on test server environment; difference environments with real environment might return difference test results.
+•	Any function will be updated while a round of the performance test is running. If this happens, the running round must be stopped and restart again, extra cost will be extended.
+•	Additional function added while testing will cause to re-plan and re-schedule.
+•	During implementing the automated scripts, if a function could not be applied automation because of technical issue, NashTech will discuss with RHINO to replace another solution if any, otherwise then it will be excluded from the test with informing to RHINO
+•	While executing the performance testing, NashTech may have question relates to the business or issue that need confirmation from RHINO, if the answer from RHINO lately affect to the testing progress, then NashTech will re-schedule.
+
+

@@ -1,0 +1,63 @@
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\appsettings.Development.json
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\appsettings.json
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\TestingControllersSample.staticwebassets.runtime.json
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\TestingControllersSample.exe
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\TestingControllersSample.deps.json
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\TestingControllersSample.runtimeconfig.json
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\TestingControllersSample.dll
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\TestingControllersSample.pdb
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingControllersSample.csproj.AssemblyReference.cache
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingControllersSample.GeneratedMSBuildEditorConfig.editorconfig
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingControllersSample.AssemblyInfoInputs.cache
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingControllersSample.AssemblyInfo.cs
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingControllersSample.csproj.CoreCompileInputs.cache
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingControllersSample.MvcApplicationPartsAssemblyInfo.cache
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingControllersSample.RazorAssemblyInfo.cache
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingControllersSample.RazorAssemblyInfo.cs
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\staticwebassets.build.json
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\staticwebassets.development.json
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\scopedcss\bundle\TestingControllersSample.styles.css
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingControllersSample.csproj.CopyComplete
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingControllersSample.dll
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\refint\TestingControllersSample.dll
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingControllersSample.pdb
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingControllersSample.genruntimeconfig.cache
+D:\Testing in ASP.NET Core\Demo\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\ref\TestingControllersSample.dll
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\appsettings.Development.json
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\appsettings.json
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\TestingControllersSample.staticwebassets.runtime.json
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\TestingControllersSample.exe
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\TestingControllersSample.deps.json
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\TestingControllersSample.runtimeconfig.json
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\TestingControllersSample.dll
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\TestingControllersSample.pdb
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingControllersSample.csproj.AssemblyReference.cache
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingControllersSample.GeneratedMSBuildEditorConfig.editorconfig
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingControllersSample.AssemblyInfoInputs.cache
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingControllersSample.AssemblyInfo.cs
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingControllersSample.csproj.CoreCompileInputs.cache
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingControllersSample.MvcApplicationPartsAssemblyInfo.cache
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingControllersSample.RazorAssemblyInfo.cache
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingControllersSample.RazorAssemblyInfo.cs
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\staticwebassets.build.json
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\staticwebassets.development.json
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\staticwebassets\msbuild.TestingControllersSample.Microsoft.AspNetCore.StaticWebAssets.props
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\staticwebassets\msbuild.build.TestingControllersSample.props
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.TestingControllersSample.props
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.TestingControllersSample.props
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\staticwebassets.pack.json
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\scopedcss\bundle\TestingControllersSample.styles.css
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingC.4C0D5650.Up2Date
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingControllersSample.dll
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\refint\TestingControllersSample.dll
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingControllersSample.pdb
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\TestingControllersSample.genruntimeconfig.cache
+c:\Data-cKhanh\.NET\ReactJS\TestingControllersSample\TestingControllersSample\obj\Debug\net6.0\ref\TestingControllersSample.dll

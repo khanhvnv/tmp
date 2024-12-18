@@ -1,0 +1,314 @@
+\\192.168.194.139\Shares\Khanh
+
+thai118@mailinator.com / 1
+
+Request data:
+
+POST http://10.84.1.76/SBAAPI_QC/api/Expenses/PostExpense
+
+POST data:
+expenseNetAmt=null&chargeable=true&units=null&expenseDate=2017-03-01T17%3A00%3A00.000Z&paymentType=0&taxRate2Amount=null&projectTaskId=ee846e12-2e2f-494a-9638-209971f4fce7&taxRate3Amount=null&receiptAttachment=null&supplier=null&taxRate1Amount=null&perUnitMultiplier=null&chargeableAmount=10&expenseTypeId=859cfd88-f210-4db2-9644-bb9eadfc583f&userProfileId=0b540353-a8c1-4372-9046-6896150d0afa&expenseNotes=%22%22&expenseGrossAmt=10&locked=false&projectId=223d5471-7e2e-46d8-8968-edd8992f9377
+
+Response data: Input string was not in a correct format.
+
+thai117 - post fail
+112
+//114
+109 - post fail -expire
+110 ok 
+115
+118
+116 ok
+113
+111
+
+khanh@mailinator
+khanh1@mailinator
+khanh2@mailinator
+khanh3@mailinator
+khanh4@mailinator
+khanh5@mailinator
+
+
+khanh001@mailinator.com
+GdL4t0
+
+Add Invoice for project with task:
+{
+  "createdByRhino": true,
+  "terms": "Invoices should be paid within 7 days from the Invoice Date",
+  "notes": "Note for Add invoice for Project with task",
+  "invoiceDate": "2017-03-05T17:00:00.000Z",
+  "invoiceRef": "Draft",
+  "dueDate": "2017-03-12T17:00:00.000Z",
+  "projectId": "${project02Id}",
+  "description": "Add invoice for Project with task",
+  "companyContactId": "${defContactId}",
+  "invoiceDetails": [
+    {
+      "timestamp": "290090d8-fb2c-43d2-8b99-c8f72efd7a47-0",
+      "createdDate": "2017-03-06T16:41:29.841Z",
+      "invoiceDetailType": "1",
+      "invoiceDetailDesc": "Default Task",
+      "projectTaskId": "${defprojectTaskId_json}",
+      "invoiceDetailNetUnitPrice": 0,
+      "invoiceDetailQty": 1,
+      "expenses": [],
+      "timesheets": [],
+      "invoiceDetailTotalNet": 0,
+      "grossAmt": 0
+    },
+    {
+      "timestamp": "8f4b9e1f-dc65-4fe3-813c-27ebf4c13668-1",
+      "createdDate": "2017-03-06T16:41:30.841Z",
+      "invoiceDetailType": "1",
+      "invoiceDetailDesc": "Task for project with task",
+      "projectTaskId": "${projectTask02Id}",
+      "invoiceDetailNetUnitPrice": 0.1,
+      "invoiceDetailQty": 10,
+      "expenses": [],
+      "timesheets": [],
+      "invoiceDetailTotalNet": 1,
+      "grossAmt": 1
+    }
+  ],
+  "totalExpenseAmt": null,
+  "netValue": 1,
+  "taxAmt1": null,
+  "taxAmt2": null,
+  "taxAmt3": null,
+  "grossAmt": 1,
+  "userProfileId": "${userProfileId}",
+  "source": 3,
+  "taxRate1": null,
+  "taxRate2": null,
+  "taxRate3": null
+}
+=================
+Add Invoice for project with TS & EX
+{
+  "createdByRhino": true,
+  "terms": "Invoices should be paid within 7 days from the Invoice Date",
+  "notes": "Note - Add invoice for Project with timesheet and expense",
+  "invoiceDate": "${fromDate}",
+  "invoiceRef": "Draft",
+  "dueDate": "${toDate}",
+  "projectId": "${project03Id}",
+  "description": "Add invoice for Project with timesheet and expense",
+  "companyContactId": "${defContactId}",
+  "invoiceDetails": [
+    {
+      "timestamp": "f04c26d1-ec67-45de-b908-96ea6fcde997-0",
+      "createdDate": "${timeDate}",
+      "invoiceDetailType": "1",
+      "invoiceDetailDesc": "Default Task",
+      "projectTaskId": "${projectTask03Id}",
+      "invoiceDetailNetUnitPrice": 0,
+      "invoiceDetailQty": 0,
+      "expenses": [],
+      "timesheets": [],
+      "totalExpense": 0,
+      "invoiceDetailTotalNet": 0,
+      "grossAmt": 0
+    }
+  ],
+  "totalExpenseAmt": 0,
+  "netValue": 104,
+  "taxAmt1": null,
+  "taxAmt2": null,
+  "taxAmt3": null,
+  "grossAmt": 104,
+  "userProfileId": "${userProfileId}",
+  "source": 3,
+  "taxRate1": null,
+  "taxRate2": null,
+  "taxRate3": null
+}
+
+
+==============
+saleid=26fcc04c-7d1a-47f9-b3ed-3be8b852873f
+{
+  "userProfileId": "${userProfileId}",
+  "forecastDate": "${toDate}",
+  "taxAmt1": null,
+  "taxAmt2": null,
+  "taxAmt3": null,
+  "grossAmt": null,
+  "companyContactSalesLifeCycleId": "${companyContactSalesLifeCycleId}",
+  "companyContactId": "${defContactId}",
+  "taxRate1": 0.2,
+  "proposalDefaultTerms": "The customer accepts responsibility for selecting materials used on each job and must guarantee access to the premises on the agreed dates",
+  "proposalDefaultNotes": "Please confirm that you are happy to proceed by email and we will be in contact to schedule the work"
+}
+
+
+{
+:   "statusCode":200,
+:   "data":
+:   [
+:   :   {
+:   :   :   "expenseTypeName":"Own Car - Mileage @ 45p",
+:   :   :   "perUnit":true,
+:   :   :   "unitDescription":"Miles",
+:   :   :   "perUnitMultiplier":0.450,
+:   :   :   "multiplierDesc":"per mile",
+:   :   :   "taxRate1Default":null,
+:   :   :   "taxRate1Display":true,
+:   :   :   "taxRate1OverRide":0.200,
+:   :   :   "taxRate2Default":null,
+:   :   :   "taxRate2Display":false,
+:   :   :   "taxRate2OverRide":null,
+:   :   :   "taxRate3Default":null,
+:   :   :   "taxRate3Display":false,
+:   :   :   "taxRate3OverRide":null,
+:   :   :   "reimbursable":false,
+:   :   :   "attachReceipt":false,
+:   :   :   "active":true,
+:   :   :   "notes":true,
+:   :   :   "personalCard":true,
+:   :   :   "companyCard":false,
+:   :   :   "bill":false,
+:   :   :   "attachSupplier":false,
+:   :   :   "effortBasedTasks":true,
+:   :   :   "ucir":"91c22282-cb4b-4e51-9ca3-a55984a1953a",
+:   :   :   "createdBy":null,
+:   :   :   "updatedBy":null,
+:   :   :   "createdDate":null,
+:   :   :   "updatedDate":null,
+:   :   :   "id":"bf8ffade-6969-4079-9c1b-1b395c6cc238",
+:   :   :   "version":"AAAAAAAACPs="
+:   :   },
+:   :   {
+:   :   :   "expenseTypeName":"Travel (Flights, Trains, Parking)",
+:   :   :   "perUnit":false,
+:   :   :   "unitDescription":null,
+:   :   :   "perUnitMultiplier":null,
+:   :   :   "multiplierDesc":null,
+:   :   :   "taxRate1Default":null,
+:   :   :   "taxRate1Display":true,
+:   :   :   "taxRate1OverRide":0.200,
+:   :   :   "taxRate2Default":null,
+:   :   :   "taxRate2Display":false,
+:   :   :   "taxRate2OverRide":null,
+:   :   :   "taxRate3Default":null,
+:   :   :   "taxRate3Display":false,
+:   :   :   "taxRate3OverRide":null,
+:   :   :   "reimbursable":false,
+:   :   :   "attachReceipt":true,
+:   :   :   "active":true,
+:   :   :   "notes":true,
+:   :   :   "personalCard":true,
+:   :   :   "companyCard":false,
+:   :   :   "bill":false,
+:   :   :   "attachSupplier":false,
+:   :   :   "effortBasedTasks":true,
+:   :   :   "ucir":"91c22282-cb4b-4e51-9ca3-a55984a1953a",
+:   :   :   "createdBy":null,
+:   :   :   "updatedBy":null,
+:   :   :   "createdDate":null,
+:   :   :   "updatedDate":null,
+:   :   :   "id":"a21eac38-2d73-4546-948c-1bbb575d5d8d",
+:   :   :   "version":"AAAAAAAACPw="
+:   :   },
+:   :   {
+:   :   :   "expenseTypeName":"General Purchases",
+:   :   :   "perUnit":false,
+:   :   :   "unitDescription":null,
+:   :   :   "perUnitMultiplier":null,
+:   :   :   "multiplierDesc":null,
+:   :   :   "taxRate1Default":null,
+:   :   :   "taxRate1Display":true,
+:   :   :   "taxRate1OverRide":0.200,
+:   :   :   "taxRate2Default":null,
+:   :   :   "taxRate2Display":false,
+:   :   :   "taxRate2OverRide":null,
+:   :   :   "taxRate3Default":null,
+:   :   :   "taxRate3Display":false,
+:   :   :   "taxRate3OverRide":null,
+:   :   :   "reimbursable":false,
+:   :   :   "attachReceipt":true,
+:   :   :   "active":true,
+:   :   :   "notes":true,
+:   :   :   "personalCard":true,
+:   :   :   "companyCard":false,
+:   :   :   "bill":false,
+:   :   :   "attachSupplier":false,
+:   :   :   "effortBasedTasks":true,
+:   :   :   "ucir":"91c22282-cb4b-4e51-9ca3-a55984a1953a",
+:   :   :   "createdBy":null,
+:   :   :   "updatedBy":null,
+:   :   :   "createdDate":null,
+:   :   :   "updatedDate":null,
+:   :   :   "id":"1b60ae5c-2378-4b99-8ee1-5963bc0ee491",
+:   :   :   "version":"AAAAAAAACPo="
+:   :   },
+:   :   {
+:   :   :   "expenseTypeName":"Meals",
+:   :   :   "perUnit":false,
+:   :   :   "unitDescription":null,
+:   :   :   "perUnitMultiplier":null,
+:   :   :   "multiplierDesc":null,
+:   :   :   "taxRate1Default":null,
+:   :   :   "taxRate1Display":true,
+:   :   :   "taxRate1OverRide":0.200,
+:   :   :   "taxRate2Default":null,
+:   :   :   "taxRate2Display":false,
+:   :   :   "taxRate2OverRide":null,
+:   :   :   "taxRate3Default":null,
+:   :   :   "taxRate3Display":false,
+:   :   :   "taxRate3OverRide":null,
+:   :   :   "reimbursable":false,
+:   :   :   "attachReceipt":true,
+:   :   :   "active":true,
+:   :   :   "notes":true,
+:   :   :   "personalCard":true,
+:   :   :   "companyCard":false,
+:   :   :   "bill":false,
+:   :   :   "attachSupplier":false,
+:   :   :   "effortBasedTasks":true,
+:   :   :   "ucir":"91c22282-cb4b-4e51-9ca3-a55984a1953a",
+:   :   :   "createdBy":null,
+:   :   :   "updatedBy":null,
+:   :   :   "createdDate":null,
+:   :   :   "updatedDate":null,
+:   :   :   "id":"82ed9d06-5a98-4977-b388-6c043fc14c58",
+:   :   :   "version":"AAAAAAAACP0="
+:   :   },
+:   :   {
+:   :   :   "expenseTypeName":"Accomodation",
+:   :   :   "perUnit":false,
+:   :   :   "unitDescription":null,
+:   :   :   "perUnitMultiplier":null,
+:   :   :   "multiplierDesc":null,
+:   :   :   "taxRate1Default":null,
+:   :   :   "taxRate1Display":true,
+:   :   :   "taxRate1OverRide":0.200,
+:   :   :   "taxRate2Default":null,
+:   :   :   "taxRate2Display":false,
+:   :   :   "taxRate2OverRide":null,
+:   :   :   "taxRate3Default":null,
+:   :   :   "taxRate3Display":false,
+:   :   :   "taxRate3OverRide":null,
+:   :   :   "reimbursable":false,
+:   :   :   "attachReceipt":true,
+:   :   :   "active":true,
+:   :   :   "notes":true,
+:   :   :   "personalCard":true,
+:   :   :   "companyCard":false,
+:   :   :   "bill":false,
+:   :   :   "attachSupplier":false,
+:   :   :   "effortBasedTasks":true,
+:   :   :   "ucir":"91c22282-cb4b-4e51-9ca3-a55984a1953a",
+:   :   :   "createdBy":null,
+:   :   :   "updatedBy":"superadmin@rhinoapps.com",
+:   :   :   "createdDate":null,
+:   :   :   "updatedDate":"2017-01-13T00:00:00",
+:   :   :   "id":"524c66c7-b29b-41fd-a5a9-e7104f0acc02",
+:   :   :   "version":"AAAAAAAACP4="
+:   :   }
+:   ],
+:   "success":true,
+:   "message":"",
+:   "paging":null
+}
