@@ -1,5 +1,5 @@
 #https://vietnix.vn/day-code-len-github/
-
+https://join.skype.com/invite/dHAVsDpMCAyY
 #Example:
 "ConnectionStrings": {
     "DefaultConnection": "Server=localhost;Database=master;Trusted_Connection=True;TrustServerCertificate=True;MultipleActiveResultSets=true"
